@@ -31,12 +31,14 @@ const config = {
       // Add dependencies to pre-optimization
       optimizeDeps: {
         include: [
-          '@storybook/angular',
+          '@storybook/angular/dist/client/index.js',
           '@angular/compiler',
+          '@angular/platform-browser/animations',
           '@storybook/addon-docs/angular',
           'react/jsx-dev-runtime',
           '@storybook/blocks',
           'tslib',
+          'zone.js'
         ],
       },
       plugins: [
@@ -52,7 +54,7 @@ const config = {
     });
   },
   docs: {
-    autodocs: "tag",
+    autodocs: true
   },
 };
 
