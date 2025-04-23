@@ -1,5 +1,5 @@
 import 'zone.js';
-import { applicationConfig, type Preview } from '@storybook/angular';
+import { applicationConfig, type Preview } from '@analogjs/storybook-angular';
 import { setCompodocJson } from '@storybook/addon-docs/angular';
 import { provideNoopAnimations } from '@angular/platform-browser/animations';
 import docJson from '../documentation.json';
@@ -11,6 +11,7 @@ const preview: Preview = {
       providers: [provideNoopAnimations()]
     })
   ],
+
   parameters: {
     controls: {
       matchers: {
@@ -19,6 +20,8 @@ const preview: Preview = {
       },
     },
   },
+
+  tags: ['autodocs']
 };
 
 export default preview;
