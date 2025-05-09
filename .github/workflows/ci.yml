@@ -1,0 +1,21 @@
+name: ci
+
+on:
+  push:
+    branches:
+      - main
+  pull_request: {}
+
+jobs:
+  build-windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 22
+      - run: corepack enable
+      - name: Install
+        run: npm install
+      - name: Build
+        run: npm run build-storybook
