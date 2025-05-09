@@ -1,0 +1,205 @@
+diff --git a/node_modules/@analogjs/storybook-angular/package.json b/node_modules/@analogjs/storybook-angular/package.json
+index aaa6e9d..0196603 100644
+--- a/node_modules/@analogjs/storybook-angular/package.json
++++ b/node_modules/@analogjs/storybook-angular/package.json
+@@ -27,7 +27,7 @@
+       "import": "./src/index.js",
+       "require": "./src/index.js"
+     },
+-    "./preset": "./src/preset.js",
++    "./preset": "./preset.mjs",
+     "./package.json": "./package.json",
+     "./*": "./src/*"
+   },
+diff --git a/node_modules/@analogjs/storybook-angular/src/preset.d.ts b/node_modules/@analogjs/storybook-angular/preset.d.ts
+similarity index 84%
+rename from node_modules/@analogjs/storybook-angular/src/preset.d.ts
+rename to node_modules/@analogjs/storybook-angular/preset.d.ts
+index 2facf7a..2e0ce9d 100644
+--- a/node_modules/@analogjs/storybook-angular/src/preset.d.ts
++++ b/node_modules/@analogjs/storybook-angular/preset.d.ts
+@@ -1,5 +1,5 @@
+ import { PresetProperty } from 'storybook/internal/types';
+-import { StorybookConfig } from './types';
++import { StorybookConfig } from './src/types';
+ export declare const core: PresetProperty<'core'>;
+ export declare const viteFinal: NonNullable<StorybookConfig['viteFinal']>;
+ export { addons, previewAnnotations } from '@storybook/angular/dist/preset.js';
+diff --git a/node_modules/@analogjs/storybook-angular/preset.js.map b/node_modules/@analogjs/storybook-angular/preset.js.map
+new file mode 100644
+index 0000000..0cc9149
+--- /dev/null
++++ b/node_modules/@analogjs/storybook-angular/preset.js.map
+@@ -0,0 +1 @@
++{"version":3,"file":"preset.js","sourceRoot":"","sources":["../../../../packages/storybook-angular/src/preset.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,OAAO,EAAE,IAAI,EAAE,MAAM,WAAW,CAAC;AAC1C,OAAO,EAAE,aAAa,EAAE,MAAM,aAAa,CAAC;AAE5C,OAAO,EAAE,IAAI,IAAI,UAAU,EAAE,MAAM,mCAAmC,CAAC;AAKvE,MAAM,OAAO,GAAG,aAAa,CAAC,MAAM,CAAC,IAAI,CAAC,GAAG,CAAC,CAAC;AAC/C,MAAM,eAAe,GAAG,CAAmB,KAAQ,EAAK,EAAE,CACxD,OAAO,CAAC,OAAO,CAAC,OAAO,CAAC,IAAI,CAAC,KAAK,EAAE,cAAc,CAAC,CAAC,CAAQ,CAAC;AAE/D,MAAM,CAAC,MAAM,IAAI,GAA2B,KAAK,EAAE,MAAM,EAAE,OAAO,EAAE,EAAE;IACpE,MAAM,UAAU,GAAI,UAAkB,CAAC,MAAM,EAAE,OAAO,CAAC,CAAC;IAExD,OAAO;QACL,GAAG,UAAU;QACb,OAAO,EAAE;YACP,IAAI,EAAE,eAAe,CAAC,yBAAyB,CAAC;YAChD,OAAO,EAAE,EAAE,GAAG,UAAU,CAAC,OAAO,EAAE;SACnC;KACF,CAAC;AACJ,CAAC,CAAC;AAEF,MAAM,CAAC,MAAM,SAAS,GAA8C,KAAK,EACvE,MAAM,EACN,OAAoC,EACpC,EAAE;IACF,qDAAqD;IACrD,MAAM,EAAE,WAAW,EAAE,GAAG,MAAM,MAAM,CAAC,MAAM,CAAC,CAAC;IAC7C,MAAM,EAAE,OAAO,EAAE,OAAO,EAAE,GAAG,MAAM,MAAM,CAAC,+BAA+B,CAAC,CAAC;IAE3E,aAAa;IACb,MAAM,SAAS,GAAG,MAAM,OAAO,CAAC,OAAO,CAAC,KAAK,CAAM,WAAW,CAAC,CAAC;IAEhE,OAAO,WAAW,CAAC,MAAM,EAAE;QACzB,uCAAuC;QACvC,YAAY,EAAE;YACZ,OAAO,EAAE;gBACP,yCAAyC;gBACzC,6BAA6B;gBAC7B,mBAAmB;gBACnB,sCAAsC;gBACtC,+BAA+B;gBAC/B,uBAAuB;gBACvB,OAAO;gBACP,SAAS;aACV;SACF;QACD,OAAO,EAAE;YACP,OAAO,CAAC;gBACN,GAAG,EACD,OAAO,SAAS,CAAC,OAAO,EAAE,GAAG,KAAK,WAAW;oBAC3C,CAAC,CAAC,SAAS,CAAC,OAAO,EAAE,GAAG;oBACxB,CAAC,CAAC,IAAI;gBACV,UAAU,EACR,OAAO,SAAS,CAAC,OAAO,EAAE,UAAU,KAAK,WAAW;oBAClD,CAAC,CAAC,SAAS,CAAC,OAAO,EAAE,UAAU;oBAC/B,CAAC,CAAC,KAAK;gBACX,QAAQ,EAAE,OAAO,EAAE,QAAQ,IAAI,4BAA4B;aAC5D,CAAC;SACH;QACD,MAAM,EAAE;YACN,yBAAyB,EAAE,IAAI,CAAC,SAAS,CAAC;gBACxC,oBAAoB,EAClB,CAAC,CAAC,OAAO,EAAE,qBAAqB,EAAE,oBAAoB;aACzD,CAAC;SACH;KACF,CAAC,CAAC;AACL,CAAC,CAAC;AAEF,OAAO,EAAE,MAAM,EAAE,kBAAkB,EAAE,MAAM,mCAAmC,CAAC"}
+\ No newline at end of file
+diff --git a/node_modules/@analogjs/storybook-angular/preset.mjs b/node_modules/@analogjs/storybook-angular/preset.mjs
+new file mode 100644
+index 0000000..3e08410
+--- /dev/null
++++ b/node_modules/@analogjs/storybook-angular/preset.mjs
+@@ -0,0 +1,55 @@
++import { dirname, join } from 'node:path';
++import { createRequire } from 'node:module';
++import { core as PresetCore } from '@storybook/angular/dist/preset.js';
++const require = createRequire(import.meta.url);
++const getAbsolutePath = (input) => dirname(require.resolve(join(input, 'package.json')));
++export const core = async (config, options) => {
++    const presetCore = PresetCore(config, options);
++    return {
++        ...presetCore,
++        builder: {
++            name: getAbsolutePath('@storybook/builder-vite'),
++            options: { ...presetCore.options },
++        },
++    };
++};
++export const viteFinal = async (config, options) => {
++    // Merge custom configuration into the default config
++    const { mergeConfig } = await import('vite');
++    const { default: angular } = await import('@analogjs/vite-plugin-angular');
++    // @ts-ignore
++    const framework = await options.presets.apply('framework');
++    return mergeConfig(config, {
++        // Add dependencies to pre-optimization
++        optimizeDeps: {
++            include: [
++                '@storybook/angular/dist/client/index.js',
++                '@analogjs/storybook-angular',
++                '@angular/compiler',
++                '@angular/platform-browser/animations',
++                '@storybook/addon-docs/angular',
++                'react/jsx-dev-runtime',
++                'tslib',
++                'zone.js',
++            ],
++        },
++        plugins: [
++            angular({
++                jit: typeof framework.options?.jit !== 'undefined'
++                    ? framework.options?.jit
++                    : true,
++                liveReload: typeof framework.options?.liveReload !== 'undefined'
++                    ? framework.options?.liveReload
++                    : false,
++                tsconfig: options?.tsConfig ?? './.storybook/tsconfig.json',
++            }),
++        ],
++        define: {
++            STORYBOOK_ANGULAR_OPTIONS: JSON.stringify({
++                experimentalZoneless: !!options?.angularBuilderOptions?.experimentalZoneless,
++            }),
++        },
++    });
++};
++export { addons, previewAnnotations } from '@storybook/angular/dist/preset.js';
++//# sourceMappingURL=preset.js.map
+\ No newline at end of file
+diff --git a/node_modules/@analogjs/storybook-angular/src/preset.js b/node_modules/@analogjs/storybook-angular/src/preset.js
+deleted file mode 100644
+index 37c4e19..0000000
+--- a/node_modules/@analogjs/storybook-angular/src/preset.js
++++ /dev/null
+@@ -1,93 +0,0 @@
+-"use strict";
+-var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+-    if (k2 === undefined) k2 = k;
+-    var desc = Object.getOwnPropertyDescriptor(m, k);
+-    if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+-      desc = { enumerable: true, get: function() { return m[k]; } };
+-    }
+-    Object.defineProperty(o, k2, desc);
+-}) : (function(o, m, k, k2) {
+-    if (k2 === undefined) k2 = k;
+-    o[k2] = m[k];
+-}));
+-var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
+-    Object.defineProperty(o, "default", { enumerable: true, value: v });
+-}) : function(o, v) {
+-    o["default"] = v;
+-});
+-var __importStar = (this && this.__importStar) || (function () {
+-    var ownKeys = function(o) {
+-        ownKeys = Object.getOwnPropertyNames || function (o) {
+-            var ar = [];
+-            for (var k in o) if (Object.prototype.hasOwnProperty.call(o, k)) ar[ar.length] = k;
+-            return ar;
+-        };
+-        return ownKeys(o);
+-    };
+-    return function (mod) {
+-        if (mod && mod.__esModule) return mod;
+-        var result = {};
+-        if (mod != null) for (var k = ownKeys(mod), i = 0; i < k.length; i++) if (k[i] !== "default") __createBinding(result, mod, k[i]);
+-        __setModuleDefault(result, mod);
+-        return result;
+-    };
+-})();
+-Object.defineProperty(exports, "__esModule", { value: true });
+-exports.previewAnnotations = exports.addons = exports.viteFinal = exports.core = void 0;
+-const node_path_1 = require("node:path");
+-const preset_js_1 = require("@storybook/angular/dist/preset.js");
+-const getAbsolutePath = (input) => (0, node_path_1.dirname)(require.resolve((0, node_path_1.join)(input, 'package.json')));
+-const core = async (config, options) => {
+-    const presetCore = preset_js_1.core(config, options);
+-    return {
+-        ...presetCore,
+-        builder: {
+-            name: getAbsolutePath('@storybook/builder-vite'),
+-            options: { ...presetCore.options },
+-        },
+-    };
+-};
+-exports.core = core;
+-const viteFinal = async (config, options) => {
+-    // Merge custom configuration into the default config
+-    const { mergeConfig } = await Promise.resolve().then(() => __importStar(require('vite')));
+-    const { default: angular } = await Promise.resolve().then(() => __importStar(require('@analogjs/vite-plugin-angular')));
+-    // @ts-ignore
+-    const framework = await options.presets.apply('framework');
+-    return mergeConfig(config, {
+-        // Add dependencies to pre-optimization
+-        optimizeDeps: {
+-            include: [
+-                '@storybook/angular/dist/client/index.js',
+-                '@analogjs/storybook-angular',
+-                '@angular/compiler',
+-                '@angular/platform-browser/animations',
+-                '@storybook/addon-docs/angular',
+-                'react/jsx-dev-runtime',
+-                'tslib',
+-                'zone.js',
+-            ],
+-        },
+-        plugins: [
+-            angular({
+-                jit: typeof framework.options?.jit !== 'undefined'
+-                    ? framework.options?.jit
+-                    : true,
+-                liveReload: typeof framework.options?.liveReload !== 'undefined'
+-                    ? framework.options?.liveReload
+-                    : false,
+-                tsconfig: options?.tsConfig ?? './.storybook/tsconfig.json',
+-            }),
+-        ],
+-        define: {
+-            STORYBOOK_ANGULAR_OPTIONS: JSON.stringify({
+-                experimentalZoneless: !!options?.angularBuilderOptions?.experimentalZoneless,
+-            }),
+-        },
+-    });
+-};
+-exports.viteFinal = viteFinal;
+-var preset_js_2 = require("@storybook/angular/dist/preset.js");
+-Object.defineProperty(exports, "addons", { enumerable: true, get: function () { return preset_js_2.addons; } });
+-Object.defineProperty(exports, "previewAnnotations", { enumerable: true, get: function () { return preset_js_2.previewAnnotations; } });
+-//# sourceMappingURL=preset.js.map
+\ No newline at end of file
+diff --git a/node_modules/@analogjs/storybook-angular/src/preset.js.map b/node_modules/@analogjs/storybook-angular/src/preset.js.map
+deleted file mode 100644
+index 9bd0908..0000000
+--- a/node_modules/@analogjs/storybook-angular/src/preset.js.map
++++ /dev/null
+@@ -1 +0,0 @@
+-{"version":3,"file":"preset.js","sourceRoot":"","sources":["../../../../packages/storybook-angular/src/preset.ts"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAAA,yCAA0C;AAG1C,iEAAuE;AAKvE,MAAM,eAAe,GAAG,CAAmB,KAAQ,EAAK,EAAE,CACxD,IAAA,mBAAO,EAAC,OAAO,CAAC,OAAO,CAAC,IAAA,gBAAI,EAAC,KAAK,EAAE,cAAc,CAAC,CAAC,CAAQ,CAAC;AAExD,MAAM,IAAI,GAA2B,KAAK,EAAE,MAAM,EAAE,OAAO,EAAE,EAAE;IACpE,MAAM,UAAU,GAAI,gBAAkB,CAAC,MAAM,EAAE,OAAO,CAAC,CAAC;IAExD,OAAO;QACL,GAAG,UAAU;QACb,OAAO,EAAE;YACP,IAAI,EAAE,eAAe,CAAC,yBAAyB,CAAC;YAChD,OAAO,EAAE,EAAE,GAAG,UAAU,CAAC,OAAO,EAAE;SACnC;KACF,CAAC;AACJ,CAAC,CAAC;AAVW,QAAA,IAAI,QAUf;AAEK,MAAM,SAAS,GAA8C,KAAK,EACvE,MAAM,EACN,OAAoC,EACpC,EAAE;IACF,qDAAqD;IACrD,MAAM,EAAE,WAAW,EAAE,GAAG,wDAAa,MAAM,GAAC,CAAC;IAC7C,MAAM,EAAE,OAAO,EAAE,OAAO,EAAE,GAAG,wDAAa,+BAA+B,GAAC,CAAC;IAE3E,aAAa;IACb,MAAM,SAAS,GAAG,MAAM,OAAO,CAAC,OAAO,CAAC,KAAK,CAAM,WAAW,CAAC,CAAC;IAEhE,OAAO,WAAW,CAAC,MAAM,EAAE;QACzB,uCAAuC;QACvC,YAAY,EAAE;YACZ,OAAO,EAAE;gBACP,yCAAyC;gBACzC,6BAA6B;gBAC7B,mBAAmB;gBACnB,sCAAsC;gBACtC,+BAA+B;gBAC/B,uBAAuB;gBACvB,OAAO;gBACP,SAAS;aACV;SACF;QACD,OAAO,EAAE;YACP,OAAO,CAAC;gBACN,GAAG,EACD,OAAO,SAAS,CAAC,OAAO,EAAE,GAAG,KAAK,WAAW;oBAC3C,CAAC,CAAC,SAAS,CAAC,OAAO,EAAE,GAAG;oBACxB,CAAC,CAAC,IAAI;gBACV,UAAU,EACR,OAAO,SAAS,CAAC,OAAO,EAAE,UAAU,KAAK,WAAW;oBAClD,CAAC,CAAC,SAAS,CAAC,OAAO,EAAE,UAAU;oBAC/B,CAAC,CAAC,KAAK;gBACX,QAAQ,EAAE,OAAO,EAAE,QAAQ,IAAI,4BAA4B;aAC5D,CAAC;SACH;QACD,MAAM,EAAE;YACN,yBAAyB,EAAE,IAAI,CAAC,SAAS,CAAC;gBACxC,oBAAoB,EAClB,CAAC,CAAC,OAAO,EAAE,qBAAqB,EAAE,oBAAoB;aACzD,CAAC;SACH;KACF,CAAC,CAAC;AACL,CAAC,CAAC;AA7CW,QAAA,SAAS,aA6CpB;AAEF,+DAA+E;AAAtE,mGAAA,MAAM,OAAA;AAAE,+GAAA,kBAAkB,OAAA"}
+\ No newline at end of file
