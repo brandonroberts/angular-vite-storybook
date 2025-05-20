@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@analogjs/storybook-angular';
-import { within, userEvent, expect } from '@storybook/test';
+import { within, userEvent, expect } from 'storybook/test';
 
 import { PageComponent } from './page.component';
 
