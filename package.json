@@ -26,6 +26,7 @@
   },
   "devDependencies": {
     "@analogjs/storybook-angular": "^1.17.1",
+    "@analogjs/vite-plugin-angular": "^1.17.1",
     "@angular/build": "^20.0.1",
     "@angular/cli": "^20.0.1",
     "@angular/compiler-cli": "^20.0.2",
@@ -45,6 +46,10 @@
     "typescript": "~5.8.3"
   },
   "overrides": {
-    "storybook": "$storybook"
+    "storybook": "$storybook",
+    "@analogjs/storybook-angular": {
+      "@angular-devkit/build-angular": "^20.0.0",
+      "@storybook/angular": "$@storybook/angular"
+    }
   }
 }
