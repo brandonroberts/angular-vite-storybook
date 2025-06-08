@@ -1,6 +1,10 @@
 # Angular + Storybook with Vite
 
-This is an example project that shows Angular and Storybook using Vite to serve/build the project.
+Build components in isolation with Angular and [Storybook](https://storybook.js.org) using [Vite](https://vite.dev).
+
+Follow the guide below to migrate your project:
+
+https://analogjs.org/docs/integrations/storybook
 
 ## Setup
 
