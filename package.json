@@ -1,14 +1,15 @@
 {
   "name": "angular-v17-vite-storybook",
   "version": "0.0.0",
+  "type": "module",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "storybook": "ng run angular-v17-vite-storybook:storybook",
-    "build-storybook": "ng run angular-v17-vite-storybook:build-storybook"
+    "storybook": "storybook dev",
+    "build-storybook": "storybook build"
   },
   "private": true,
   "dependencies": {
@@ -34,16 +35,21 @@
     "@storybook/addon-docs": "^9.1.0",
     "@storybook/addon-links": "^9.1.0",
     "@storybook/angular": "^9.1.0",
+    "@storybook/addon-vitest": "^9.1.0-alpha.6",
     "@types/jasmine": "~5.1.5",
+    "@vitest/browser": "^3.2.4",
     "jasmine-core": "~5.5.0",
+    "jsdom": "^26.1.0",
     "karma": "~6.4.4",
     "karma-chrome-launcher": "~3.2.0",
     "karma-coverage": "~2.2.1",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
     "patch-package": "^8.0.0",
+    "playwright": "^1.53.2",
     "storybook": "^9.1.0",
-    "typescript": "~5.8.3"
+    "typescript": "~5.8.3",
+    "vitest": "3.2.4"
   },
   "overrides": {
     "storybook": "$storybook",

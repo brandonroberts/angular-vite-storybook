@@ -1,15 +1,15 @@
 import 'zone.js';
-import { applicationConfig, type Preview } from '@analogjs/storybook-angular';
-import { setCompodocJson } from '@storybook/addon-docs/angular';
-import { provideNoopAnimations } from '@angular/platform-browser/animations';
+import { type Preview } from '@analogjs/storybook-angular';
+// import { setCompodocJson } from '@storybook/addon-docs/angular';
+// import { provideNoopAnimations } from '@angular/platform-browser/animations';
 import docJson from '../documentation.json';
-setCompodocJson(docJson);
+// setCompodocJson(docJson);
 
 const preview: Preview = {
   decorators: [
-    applicationConfig({
-      providers: [provideNoopAnimations()]
-    })
+    // applicationConfig({
+    //   providers: [provideNoopAnimations()]
+    // })
   ],
 
   parameters: {
