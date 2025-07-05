@@ -31,9 +31,9 @@
     "@angular/cli": "^20.0.1",
     "@angular/compiler-cli": "^20.0.2",
     "@compodoc/compodoc": "^1.1.26",
-    "@storybook/addon-docs": "^9.1.0-alpha.3",
-    "@storybook/addon-links": "^9.1.0-alpha.3",
-    "@storybook/angular": "^9.1.0-alpha.3",
+    "@storybook/addon-docs": "^9.1.0-alpha.6",
+    "@storybook/addon-links": "^9.1.0-alpha.6",
+    "@storybook/angular": "^9.1.0-alpha.6",
     "@types/jasmine": "~5.1.5",
     "jasmine-core": "~5.5.0",
     "karma": "~6.4.4",
@@ -42,7 +42,7 @@
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
     "patch-package": "^8.0.0",
-    "storybook": "^9.1.0-alpha.3",
+    "storybook": "^9.1.0-alpha.6",
     "typescript": "~5.8.3"
   },
   "overrides": {
