@@ -8,10 +8,13 @@ import {
 import { getTestBed } from '@angular/core/testing';
 import { beforeAll } from 'vitest';
 
+
 import { setProjectAnnotations } from '@storybook/angular/dist/client/index.mjs';
-import * as previewAnnotations from './preview';
+import * as configAnnotations from '@storybook/angular/dist/client/config.mjs';
+import * as docsAnnotations from'@storybook/angular/dist/client/docs/config.mjs';
+import * as projectAnnotations from './preview';
 // console.log({ previewAnnotations });
-const annotations = setProjectAnnotations([previewAnnotations]);
+const annotations = setProjectAnnotations([configAnnotations, docsAnnotations, projectAnnotations]);
 
 // Run Storybook's beforeAll hook
 beforeAll(annotations.beforeAll);

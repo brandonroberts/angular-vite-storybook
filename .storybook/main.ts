@@ -31,17 +31,24 @@ const config: StorybookConfig & StorybookConfigVite = {
       // Add dependencies to pre-optimization
       optimizeDeps: {
         include: [
-          '@storybook/angular',
-          '@storybook/angular/dist/client/index.js',
           '@angular/compiler',
-          '@storybook/blocks',
+          // '@storybook/blocks',
           'tslib',
-        ],
-        exclude: [
-          '@storybook/angular/dist/client/config.js'
         ]
       },
-      plugins: [angular({ jit: true, tsconfig: './.storybook/tsconfig.json' })],
+      plugins: [
+        {
+          name: 'test',
+          transform(code, id, options) {
+            // if (!code) {
+            if (id.includes('src') && id.includes('.ts')) {
+              console.log('id', id, code);
+            }
+            // }
+          },
+        },
+        angular({ jit: true, tsconfig: './.storybook/tsconfig.json' })
+      ]
     });
   },
 };
