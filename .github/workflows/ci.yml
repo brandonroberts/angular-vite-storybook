@@ -20,7 +20,7 @@ jobs:
       - name: Build
         run: npm run build-storybook
 
-  test-storybook:
+  test-windows:
     runs-on: windows-latest
     steps:
       - uses: actions/checkout@v3
@@ -30,5 +30,7 @@ jobs:
       - run: corepack enable
       - name: Install
         run: npm install
-      - name: Build
+      - name: Playwright Install
+        run: npx playwright install
+      - name: Test Storybook
         run: npm run test-storybook
