@@ -19,3 +19,18 @@ jobs:
         run: npm install
       - name: Build
         run: npm run build-storybook
+
+  test-windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 22
+      - run: corepack enable
+      - name: Install
+        run: npm install
+      - name: Playwright Install
+        run: npx playwright install
+      - name: Test Storybook
+        run: npm run test-storybook

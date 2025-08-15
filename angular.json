@@ -116,6 +116,9 @@
             ],
             "outputDir": "storybook-static"
           }
+        },
+        "test-storybook": {
+          "builder": "@analogjs/vitest-angular:test"
         }
       }
     }

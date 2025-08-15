@@ -8,11 +8,13 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "storybook": "ng run angular-v17-vite-storybook:storybook",
-    "build-storybook": "ng run angular-v17-vite-storybook:build-storybook"
+    "build-storybook": "ng run angular-v17-vite-storybook:build-storybook",
+    "test-storybook": "ng run angular-v17-vite-storybook:test-storybook"
   },
   "private": true,
   "dependencies": {
     "@angular/animations": "^20.1.4",
+    "@angular/cdk": "^20.1.4",
     "@angular/common": "^20.1.4",
     "@angular/compiler": "^20.1.4",
     "@angular/core": "^20.1.4",
@@ -25,32 +27,42 @@
     "zone.js": "~0.15.0"
   },
   "devDependencies": {
-    "@analogjs/storybook-angular": "^1.19.4-beta.1",
-    "@analogjs/vite-plugin-angular": "^1.19.4-beta.1",
+    "@analogjs/storybook-angular": "^1.20.0-beta.1",
+    "@analogjs/vite-plugin-angular": "^1.20.0-beta.1",
+    "@analogjs/vitest-angular": "^1.20.0-beta.1",
     "@angular/build": "^20.1.4",
     "@angular/cli": "^20.1.4",
     "@angular/compiler-cli": "^20.1.4",
     "@compodoc/compodoc": "^1.1.26",
-    "@storybook/addon-docs": "^9.1.0",
-    "@storybook/addon-links": "^9.1.0",
-    "@storybook/angular": "^9.1.0",
+    "@storybook/addon-docs": "^9.1.1",
+    "@storybook/addon-links": "^9.1.1",
+    "@storybook/addon-vitest": "^9.1.1",
+    "@storybook/angular": "^9.1.1",
+    "@storybook/test-runner": "^0.23.0",
+    "@testing-library/angular": "^18.0.0",
     "@types/jasmine": "~5.1.5",
+    "@vitest/browser": "^3.2.4",
     "jasmine-core": "~5.5.0",
+    "jsdom": "^26.1.0",
     "karma": "~6.4.4",
     "karma-chrome-launcher": "~3.2.0",
     "karma-coverage": "~2.2.1",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "markdown-to-jsx": "7.7.13",
     "patch-package": "^8.0.0",
-    "storybook": "^9.1.0",
-    "typescript": "~5.8.3"
+    "playwright": "^1.53.2",
+    "storybook": "^9.1.1",
+    "typescript": "~5.8.3",
+    "vite":"^7.1.2",
+    "vitest": "3.2.4"
   },
   "overrides": {
     "storybook": "$storybook",
     "@analogjs/storybook-angular": {
       "@angular-devkit/build-angular": "^20.1.4",
       "@storybook/angular": "$@storybook/angular",
-      "@analogjs/vite-plugin-angular": "^1.19.4-beta.1"
+      "@analogjs/vite-plugin-angular": "^1.20.0-beta.1"
     }
   }
 }
