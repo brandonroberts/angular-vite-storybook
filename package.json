@@ -9,7 +9,8 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "storybook": "ng run angular-v17-vite-storybook:storybook",
-    "build-storybook": "ng run angular-v17-vite-storybook:build-storybook"
+    "build-storybook": "ng run angular-v17-vite-storybook:build-storybook",
+    "test-storybook": "ng run angular-v17-vite-storybook:test-storybook"
   },
   "private": true,
   "dependencies": {
@@ -29,6 +30,7 @@
   "devDependencies": {
     "@analogjs/storybook-angular": "^1.19.4",
     "@analogjs/vite-plugin-angular": "^1.19.4",
+    "@analogjs/vitest-angular": "^1.19.4",
     "@angular/build": "^20.1.4",
     "@angular/cli": "^20.1.4",
     "@angular/compiler-cli": "^20.1.4",
