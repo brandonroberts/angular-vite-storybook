@@ -27,9 +27,9 @@
     "zone.js": "~0.15.0"
   },
   "devDependencies": {
-    "@analogjs/storybook-angular": "^1.20.0-beta.1",
-    "@analogjs/vite-plugin-angular": "^1.20.0-beta.1",
-    "@analogjs/vitest-angular": "^1.20.0-beta.1",
+    "@analogjs/storybook-angular": "^1.20.1",
+    "@analogjs/vite-plugin-angular": "^1.20.1",
+    "@analogjs/vitest-angular": "^1.20.1",
     "@angular/build": "^20.1.4",
     "@angular/cli": "^20.1.4",
     "@angular/compiler-cli": "^20.1.4",
@@ -62,7 +62,7 @@
     "@analogjs/storybook-angular": {
       "@angular-devkit/build-angular": "^20.1.4",
       "@storybook/angular": "$@storybook/angular",
-      "@analogjs/vite-plugin-angular": "^1.20.0-beta.1"
+      "@analogjs/vite-plugin-angular": "^1.20.1"
     }
   }
 }

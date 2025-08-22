@@ -1,4 +1,3 @@
-import 'zone.js';
 import { type Preview } from '@analogjs/storybook-angular';
 import { setCompodocJson } from '@storybook/addon-docs/angular';
 import docJson from '../documentation.json';
