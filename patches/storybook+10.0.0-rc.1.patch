@@ -1,0 +1,13 @@
+diff --git a/node_modules/storybook/dist/_node-chunks/chunk-HB37PYB7.js b/node_modules/storybook/dist/_node-chunks/chunk-HB37PYB7.js
+index 32cca5f..d11d2df 100644
+--- a/node_modules/storybook/dist/_node-chunks/chunk-HB37PYB7.js
++++ b/node_modules/storybook/dist/_node-chunks/chunk-HB37PYB7.js
+@@ -12538,7 +12538,7 @@ function validateFrameworkName(frameworkName) {
+     return;
+   }
+   try {
+-    resolveModulePath(join10(frameworkName, "preset"), {
++    resolveModulePath(`${frameworkName}/preset`, {
+       extensions: [".mjs", ".js", ".cjs"],
+       conditions: ["node", "import", "require"]
+     });
