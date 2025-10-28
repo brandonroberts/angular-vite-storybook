@@ -22,7 +22,7 @@
                 }
             ],
             "indexSignatures": [],
-            "kind": 171,
+            "kind": 172,
             "methods": [],
             "extends": []
         }
@@ -125,7 +125,7 @@
                         {
                             "pos": 798,
                             "end": 811,
-                            "kind": 327,
+                            "kind": 328,
                             "id": 0,
                             "flags": 16842752,
                             "modifierFlagsCache": 0,
@@ -414,6 +414,16 @@
                 "deprecationMessage": "",
                 "type": "ApplicationConfig",
                 "defaultValue": "{\n  providers: [provideRouter(routes)]\n}"
+            },
+            {
+                "name": "routes",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/app.routes.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Routes",
+                "defaultValue": "[]"
             }
         ],
         "functions": [],
@@ -431,15 +441,31 @@
                     "type": "ApplicationConfig",
                     "defaultValue": "{\n  providers: [provideRouter(routes)]\n}"
                 }
+            ],
+            "src/app/app.routes.ts": [
+                {
+                    "name": "routes",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/app.routes.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Routes",
+                    "defaultValue": "[]"
+                }
             ]
         },
         "groupedFunctions": {},
         "groupedEnumerations": {},
         "groupedTypeAliases": {}
     },
-    "routes": [],
+    "routes": {
+        "name": "<root>",
+        "kind": "module",
+        "children": []
+    },
     "coverage": {
-        "count": 13,
+        "count": 11,
         "status": "low",
         "files": [
             {
@@ -457,6 +483,16 @@
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
                 "name": "appConfig",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/app.routes.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "routes",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
