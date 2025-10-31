@@ -27,19 +27,19 @@
     "zone.js": "~0.15.0"
   },
   "devDependencies": {
-    "@analogjs/storybook-angular": "2.0.0-beta.14",
-    "@analogjs/vite-plugin-angular": "2.0.0-beta.14",
-    "@analogjs/vitest-angular": "2.0.0-beta.14",
+    "@analogjs/storybook-angular": "2.0.0-beta.17",
+    "@analogjs/vite-plugin-angular": "2.0.0-beta.17",
+    "@analogjs/vitest-angular": "2.0.0-beta.17",
     "@angular/build": "^20.1.4",
     "@angular/cli": "^20.1.4",
     "@angular/compiler-cli": "^20.1.4",
     "@compodoc/compodoc": "^1.1.26",
-    "@storybook/addon-a11y": "10.0.0-rc.4",
-    "@storybook/addon-docs": "10.0.0-rc.4",
-    "@storybook/addon-links": "10.0.0-rc.4",
-    "@storybook/addon-vitest": "10.0.0-rc.4",
-    "@storybook/angular": "10.0.0-rc.4",
-    "@storybook/builder-vite": "10.0.0-rc.4",
+    "@storybook/addon-a11y": "^10.0.0",
+    "@storybook/addon-docs": "^10.0.0",
+    "@storybook/addon-links": "^10.0.0",
+    "@storybook/addon-vitest": "^10.0.0",
+    "@storybook/angular": "^10.0.0",
+    "@storybook/builder-vite": "^10.0.0",
     "@storybook/test-runner": "^0.23.0",
     "@testing-library/angular": "^18.0.0",
     "@types/jasmine": "~5.1.5",
@@ -54,7 +54,7 @@
     "markdown-to-jsx": "7.7.13",
     "patch-package": "^8.0.0",
     "playwright": "^1.53.2",
-    "storybook": "10.0.0-rc.4",
+    "storybook": "^10.0.0",
     "typescript": "~5.8.3",
     "vite": "^7.1.2",
     "vitest": "3.2.4"
@@ -65,7 +65,7 @@
       "@angular-devkit/build-angular": "^20.1.4",
       "@storybook/angular": "$@storybook/angular",
       "@storybook/builder-vite": "$@storybook/builder-vite",
-      "@analogjs/vite-plugin-angular": "2.0.0-beta.14"
+      "@analogjs/vite-plugin-angular": "2.0.0-beta.17"
     }
   }
 }

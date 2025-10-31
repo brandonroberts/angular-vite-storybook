@@ -103,7 +103,8 @@
             "port": 6006,
             "styles": [
               "/src/styles.css"
-            ]
+            ],
+            "experimentalZoneless": true
           }
         },
         "build-storybook": {
@@ -120,7 +121,8 @@
             "outputDir": "storybook-static",
             "styles": [
               "/src/styles.css"
-            ]
+            ],
+            "experimentalZoneless": true
           }
         },
         "test-storybook": {
