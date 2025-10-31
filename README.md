@@ -30,6 +30,6 @@ npm run build-storybook
 npm run test-storybook
 ```
 
-## Support
+## Thanks
 
-You can support this work by [sponsoring me on GitHub](https://github.com/sponsors/brandonroberts).
+You can support this work by [thanking me one-time on GitHub](https://github.com/sponsors/brandonroberts?frequency=one-time&sponsor=brandonroberts).
