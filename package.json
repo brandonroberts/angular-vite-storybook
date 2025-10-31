@@ -13,26 +13,26 @@
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "^20.1.4",
-    "@angular/cdk": "^20.1.4",
-    "@angular/common": "^20.1.4",
-    "@angular/compiler": "^20.1.4",
-    "@angular/core": "^20.1.4",
-    "@angular/forms": "^20.1.4",
-    "@angular/platform-browser": "^20.1.4",
-    "@angular/platform-browser-dynamic": "^20.1.4",
-    "@angular/router": "^20.1.4",
+    "@angular/animations": "^21.0.0-rc.0",
+    "@angular/cdk": "^21.0.0-next.10",
+    "@angular/common": "^21.0.0-rc.0",
+    "@angular/compiler": "^21.0.0-rc.0",
+    "@angular/core": "^21.0.0-rc.0",
+    "@angular/forms": "^21.0.0-rc.0",
+    "@angular/platform-browser": "^21.0.0-rc.0",
+    "@angular/platform-browser-dynamic": "^21.0.0-rc.0",
+    "@angular/router": "^21.0.0-rc.0",
     "rxjs": "~7.8.1",
     "tslib": "^2.8.1",
     "zone.js": "~0.15.0"
   },
   "devDependencies": {
-    "@analogjs/storybook-angular": "2.0.0-beta.17",
-    "@analogjs/vite-plugin-angular": "2.0.0-beta.17",
-    "@analogjs/vitest-angular": "2.0.0-beta.17",
-    "@angular/build": "^20.1.4",
-    "@angular/cli": "^20.1.4",
-    "@angular/compiler-cli": "^20.1.4",
+    "@analogjs/storybook-angular": "2.0.0-beta.20",
+    "@analogjs/vite-plugin-angular": "2.0.0-beta.20",
+    "@analogjs/vitest-angular": "2.0.0-beta.20",
+    "@angular/build": "^21.0.0-rc.0",
+    "@angular/cli": "^21.0.0-rc.0",
+    "@angular/compiler-cli": "^21.0.0-rc.0",
     "@compodoc/compodoc": "^1.1.26",
     "@storybook/addon-a11y": "^10.0.0",
     "@storybook/addon-docs": "^10.0.0",
@@ -40,10 +40,11 @@
     "@storybook/addon-vitest": "^10.0.0",
     "@storybook/angular": "^10.0.0",
     "@storybook/builder-vite": "^10.0.0",
-    "@storybook/test-runner": "^0.23.0",
-    "@testing-library/angular": "^18.0.0",
+    "@storybook/test-runner": "^0.24.1",
+    "@testing-library/angular": "^18.1.0",
     "@types/jasmine": "~5.1.5",
-    "@vitest/browser": "^3.2.4",
+    "@vitest/browser": "^4.0.6",
+    "@vitest/browser-playwright": "^4.0.6",
     "jasmine-core": "~5.5.0",
     "jsdom": "^26.1.0",
     "karma": "~6.4.4",
@@ -55,17 +56,43 @@
     "patch-package": "^8.0.0",
     "playwright": "^1.53.2",
     "storybook": "^10.0.0",
-    "typescript": "~5.8.3",
+    "typescript": "~5.9.3",
     "vite": "^7.1.2",
-    "vitest": "3.2.4"
+    "vitest": "4.0.6"
   },
   "overrides": {
-    "storybook": "$storybook",
-    "@analogjs/storybook-angular": {
-      "@angular-devkit/build-angular": "^20.1.4",
-      "@storybook/angular": "$@storybook/angular",
-      "@storybook/builder-vite": "$@storybook/builder-vite",
-      "@analogjs/vite-plugin-angular": "2.0.0-beta.17"
+    "@analogjs/vite-plugin-angular": {
+      "@angular/build": "$@angular/build"
+    },
+    "@angular-devkit/build-angular": {
+      "@angular/core": "$@angular/core",
+      "@angular/compiler-cli": "$@angular/compiler-cli",
+      "@angular/platform-browser": "$@angular/platform-browser"
+    },
+    "@storybook/angular": {
+      "@angular/animations": "$@angular/animations",
+      "@angular/build": "$@angular/build",
+      "@angular/cli": "$@angular/cli",
+      "@angular/common": "$@angular/common",
+      "@angular/compiler": "$@angular/compiler",
+      "@angular/compiler-cli": "$@angular/compiler-cli",
+      "@angular/core": "$@angular/core",
+      "@angular/forms": "$@angular/forms",
+      "@angular/platform-browser": "$@angular/platform-browser",
+      "@angular/platform-browser-dynamic": "$@angular/platform-browser-dynamic",
+      "@angular/router": "$@angular/router"
+    },
+    "@testing-library/angular": {
+      "@angular/animations": "$@angular/animations",
+      "@angular/build": "$@angular/build",
+      "@angular/common": "$@angular/common",
+      "@angular/compiler": "$@angular/compiler",
+      "@angular/compiler-cli": "$@angular/compiler-cli",
+      "@angular/core": "$@angular/core",
+      "@angular/forms": "$@angular/forms",
+      "@angular/platform-browser": "$@angular/platform-browser",
+      "@angular/platform-browser-dynamic": "$@angular/platform-browser-dynamic",
+      "@angular/router": "$@angular/router"
     }
   }
 }
