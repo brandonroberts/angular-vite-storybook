@@ -24,6 +24,12 @@ npm run storybook
 npm run build-storybook
 ```
 
+## Test
+
+```sh
+npm run test-storybook
+```
+
 ## Support
 
 You can support this work by [sponsoring me on GitHub](https://github.com/sponsors/brandonroberts).
