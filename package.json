@@ -13,26 +13,28 @@
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "^21.0.0-rc.0",
-    "@angular/cdk": "^21.0.0-next.10",
-    "@angular/common": "^21.0.0-rc.0",
-    "@angular/compiler": "^21.0.0-rc.0",
-    "@angular/core": "^21.0.0-rc.0",
-    "@angular/forms": "^21.0.0-rc.0",
-    "@angular/platform-browser": "^21.0.0-rc.0",
-    "@angular/platform-browser-dynamic": "^21.0.0-rc.0",
-    "@angular/router": "^21.0.0-rc.0",
+    "@angular/animations": "^21.0.0",
+    "@angular/cdk": "^21.0.0",
+    "@angular/common": "^21.0.0",
+    "@angular/compiler": "^21.0.0",
+    "@angular/core": "^21.0.0",
+    "@angular/forms": "^21.0.0",
+    "@angular/localize": "^21.0.0",
+    "@angular/platform-browser": "^21.0.0",
+    "@angular/platform-browser-dynamic": "^21.0.0",
+    "@angular/router": "^21.0.0",
+    "@angular/ssr": "^21.0.0",
     "rxjs": "~7.8.1",
     "tslib": "^2.8.1",
     "zone.js": "~0.15.0"
   },
   "devDependencies": {
-    "@analogjs/storybook-angular": "2.0.0",
-    "@analogjs/vite-plugin-angular": "2.0.0",
-    "@analogjs/vitest-angular": "2.0.0",
-    "@angular/build": "^21.0.0-rc.0",
-    "@angular/cli": "^21.0.0-rc.0",
-    "@angular/compiler-cli": "^21.0.0-rc.0",
+    "@analogjs/storybook-angular": "^2.1.0",
+    "@analogjs/vite-plugin-angular": "^2.1.0",
+    "@analogjs/vitest-angular": "^2.1.0",
+    "@angular/build": "^21.0.0",
+    "@angular/cli": "^21.0.0",
+    "@angular/compiler-cli": "^21.0.0",
     "@compodoc/compodoc": "^1.1.26",
     "@storybook/addon-a11y": "^10.0.0",
     "@storybook/addon-docs": "^10.0.0",
@@ -43,8 +45,8 @@
     "@storybook/test-runner": "^0.24.1",
     "@testing-library/angular": "^18.1.0",
     "@types/jasmine": "~5.1.5",
-    "@vitest/browser": "^4.0.6",
-    "@vitest/browser-playwright": "^4.0.6",
+    "@vitest/browser": "^4.0.8",
+    "@vitest/browser-playwright": "^4.0.8",
     "jasmine-core": "~5.5.0",
     "jsdom": "^26.1.0",
     "karma": "~6.4.4",
@@ -58,41 +60,24 @@
     "storybook": "^10.0.0",
     "typescript": "~5.9.3",
     "vite": "^7.1.2",
-    "vitest": "4.0.6"
+    "vitest": "^4.0.0"
   },
   "overrides": {
-    "@analogjs/vite-plugin-angular": {
-      "@angular/build": "$@angular/build"
-    },
-    "@angular-devkit/build-angular": {
-      "@angular/core": "$@angular/core",
-      "@angular/compiler-cli": "$@angular/compiler-cli",
-      "@angular/platform-browser": "$@angular/platform-browser"
-    },
     "@storybook/angular": {
-      "@angular/animations": "$@angular/animations",
-      "@angular/build": "$@angular/build",
-      "@angular/cli": "$@angular/cli",
-      "@angular/common": "$@angular/common",
-      "@angular/compiler": "$@angular/compiler",
-      "@angular/compiler-cli": "$@angular/compiler-cli",
-      "@angular/core": "$@angular/core",
-      "@angular/forms": "$@angular/forms",
-      "@angular/platform-browser": "$@angular/platform-browser",
-      "@angular/platform-browser-dynamic": "$@angular/platform-browser-dynamic",
-      "@angular/router": "$@angular/router"
-    },
-    "@testing-library/angular": {
-      "@angular/animations": "$@angular/animations",
-      "@angular/build": "$@angular/build",
-      "@angular/common": "$@angular/common",
-      "@angular/compiler": "$@angular/compiler",
-      "@angular/compiler-cli": "$@angular/compiler-cli",
-      "@angular/core": "$@angular/core",
-      "@angular/forms": "$@angular/forms",
-      "@angular/platform-browser": "$@angular/platform-browser",
-      "@angular/platform-browser-dynamic": "$@angular/platform-browser-dynamic",
-      "@angular/router": "$@angular/router"
-    }
+      "@angular-devkit/build-angular": "^21.0.0",
+      "@angular/animations": "^21.0.0",
+      "@angular/build": "^21.0.0",
+      "@angular/cli": "^21.0.0",
+      "@angular/common": "^21.0.0",
+      "@angular/compiler": "^21.0.0",
+      "@angular/compiler-cli": "^21.0.0",
+      "@angular/core": "^21.0.0",
+      "@angular/forms": "^21.0.0",
+      "@angular/localize": "^21.0.0",
+      "@angular/platform-browser": "^21.0.0",
+      "@angular/platform-browser-dynamic": "^21.0.0",
+      "@angular/platform-server": "^21.0.0",
+      "@angular/router": "^21.0.0"
+    }    
   }
 }
