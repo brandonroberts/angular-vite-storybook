@@ -16,6 +16,11 @@
     "experimentalDecorators": true,
     "moduleResolution": "bundler",
     "importHelpers": true,
+    "paths": {
+      "sr-button": [
+        "./dist/sr-button"
+      ]
+    },
     "target": "ES2022",
     "module": "ES2022",
     "useDefineForClassFields": false
@@ -25,5 +30,13 @@
     "strictInjectionParameters": true,
     "strictInputAccessModifiers": true,
     "strictTemplates": true
-  }
+  },
+  "references": [
+    {
+      "path": "./src/components/sr-button/tsconfig.lib.json"
+    },
+    {
+      "path": "./src/components/sr-button/tsconfig.spec.json"
+    }
+  ]
 }

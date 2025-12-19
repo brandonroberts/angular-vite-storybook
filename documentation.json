@@ -400,6 +400,42 @@
             ],
             "stylesData": "",
             "extends": []
+        },
+        {
+            "name": "SrButton",
+            "id": "component-SrButton-92ae3d5a192b5a17fd38f20944e0768bd5b872624278448ab47b5ef1c37497546771fc44c01e7f9b26a1be4d8c1d758d29f84bbc9526a5f63dc31f5f22daa1db",
+            "file": "src/components/sr-button/src/lib/sr-button.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "lib-sr-button",
+            "styleUrls": [],
+            "styles": [],
+            "template": "<p>\n  sr-button works!\n</p>\n",
+            "templateUrl": [],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": false,
+            "imports": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'lib-sr-button',\n  imports: [],\n  template: `\n    <p>\n      sr-button works!\n    </p>\n  `,\n  styleUrl: './sr-button.scss',\n})\nexport class SrButton {\n\n}\n",
+            "styleUrl": "./sr-button.scss",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "extends": []
         }
     ],
     "modules": [],
@@ -465,7 +501,7 @@
         "children": []
     },
     "coverage": {
-        "count": 11,
+        "count": 10,
         "status": "low",
         "files": [
             {
@@ -493,6 +529,15 @@
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
                 "name": "routes",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/components/sr-button/src/lib/sr-button.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "SrButton",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"

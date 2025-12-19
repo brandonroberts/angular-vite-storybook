@@ -1,0 +1,7 @@
+* {
+	--border-color: red;
+}
+
+p {
+	color: var(--border-color);
+}
